@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | 隐私政策 - 密码管理器 (VaultGuard)</title>
+  <meta name="description" content="VaultGuard (com.freytagnan.pwdmanager_local) 100% Offline Standalone Password Manager Privacy Policy. 纯离线单机隐私政策。">
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-dark: #059669;
+      --bg: #ffffff;
+      --text: #1f2937;
+      --text-muted: #6b7280;
+      --card-bg: #f9fafb;
+      --border: #e5e7eb;
+      --badge-bg: #ecfdf5;
+      --badge-text: #065f46;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --text: #f3f4f6;
+        --text-muted: #9ca3af;
+        --card-bg: #1f2937;
+        --border: #374151;
+        --badge-bg: #064e3b;
+        --badge-text: #a7f3d0;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 80px 20px;
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .badge {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .content-section {
+      display: none;
+    }
+    .content-section.active {
+      display: block;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 0.97rem;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .highlight-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+    .highlight-card strong {
+      color: var(--primary);
+    }
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+    .nav-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <div>
+          <span class="badge">100% Offline / 纯单机</span>
+          <h1 id="page-title">隐私政策 (Privacy Policy)</h1>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('zh')">中文</button>
+          <button class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </div>
+      <div class="meta">
+        <div><strong>应用名称 / Application</strong>: 密码管理器 (VaultGuard 离线版)</div>
+        <div><strong>应用包名 / Package</strong>: <code>com.freytagnan.pwdmanager_local</code></div>
+        <div><strong>生效日期 / Effective Date</strong>: 2026年10月01日 (October 01, 2026)</div>
+      </div>
+    </div>
+
+    <!-- 中文内容 -->
+    <div id="content-zh" class="content-section active">
+      <div class="highlight-card">
+        <strong>【核心声明】</strong> 本应用是一款专为极致数据安全而设计的纯本地单机工具。遵循“零网络通信”与“零知识证明”架构设计。在技术层面，本应用在底层清单中彻底剥离并阻断了所有操作系统网络权限（<code>android.permission.INTERNET</code> 与 <code>android.permission.ACCESS_NETWORK_STATE</code>），<strong>本应用及其开发者绝不收集、不上传、不共享、不出售您的任何个人数据或凭证</strong>。
+      </div>
+
+      <h2>一、 核心原则：零网络通信与物理级沙盒隔离</h2>
+      <ol>
+        <li><strong>彻底禁用网络权限</strong>：Android 底层机制物理阻断本应用发起任何网络请求。应用无后端服务器、无远程 API、无云端同步数据库，绝无数据外泄通道。</li>
+        <li><strong>本地硬件级端到端加密</strong>：所有账号、密码、TOTP 双重验证密钥、助记词及三级备注（备注1、备注2、备注3），均使用 <strong>Argon2id</strong> 密钥派生函数与 <strong>XChaCha20-Poly1305 / AES-256-GCM</strong> 高强度算法在设备本地加密后存入私有数据库。</li>
+        <li><strong>主密码绝对私有</strong>：主加密密钥由您的主密码在本地内存实时派生，受 Android Keystore 硬件安全芯片（TEE/StrongBox）保护，退出锁定后即刻擦除。开发者及任何第三方均无法在外部窥探或解密。</li>
+      </ol>
+
+      <h2>二、 个人信息“零收集”说明</h2>
+      <ul>
+        <li><strong>不收集身份信息</strong>：不设注册系统，不收集手机号、邮箱、姓名、身份证等个人身份信息；</li>
+        <li><strong>不收集设备标识</strong>：不读取亦不收集 IMEI、MEID、Android ID、OAID、MAC 地址或硬件序列号；</li>
+        <li><strong>不收集行为统计</strong>：不记录使用频率、点击轨迹或页面停留时长，无任何行为追踪探针；</li>
+        <li><strong>不收集地理位置</strong>：不申请、不调用 GPS、基站或 Wi-Fi 定位；</li>
+        <li><strong>剪贴板保护机制</strong>：复制密码仅用于粘贴，支持定时自动清空剪贴板，绝不后台截取外部剪贴板内容。</li>
+      </ul>
+
+      <h2>三、 设备权限申请与合规使用说明</h2>
+      <p>本应用遵循“最小必要原则”向操作系统申请以下权限：</p>
+      <ul>
+        <li><strong>生物识别权限（<code>android.permission.USE_BIOMETRIC</code>）</strong>：仅用于指纹/面容快速解锁本地数据库。生物识别匹配完全由设备底层硬件芯片完成，本应用不接触亦不收集原始生物特征。</li>
+        <li><strong>相机权限（<code>android.permission.CAMERA</code>）</strong>：仅在您主动扫码添加 2FA 动态令牌时调用，图像流在设备内存本地解码后立即销毁，绝不上传或留存任何画面。</li>
+        <li><strong>振动权限（<code>android.permission.VIBRATE</code>）</strong>：用于操作成功（复制、扫码）时的触觉反馈。</li>
+        <li><strong>通知权限（<code>android.permission.POST_NOTIFICATIONS</code>）</strong>：用于显示剪贴板安全倒计时或自动保存确认提示。</li>
+        <li><strong>系统自动填充服务（<code>AutofillService</code>）</strong>：经您授权并校验指纹后协助填写外部网页或 App 的账密，绝不后台收集其他界面的非凭证文本。</li>
+      </ul>
+
+      <h2>四、 第三方 SDK 与依赖说明</h2>
+      <p>本应用彻底排除了任何第三方商业广告 SDK、友盟/Firebase Analytics 等统计追踪 SDK 以及云端消息推送组件。内置的二维码识别模块（ML Kit / ZXing）完全运行于设备本地 CPU/NPU，离线运行无需联网。</p>
+
+      <h2>五、 数据自主控制与彻底销毁</h2>
+      <ul>
+        <li><strong>完全自主控制</strong>：数据完整存放在您设备私有应用沙盒中，您拥有 100% 掌控权。</li>
+        <li><strong>明文导出警示</strong>：导出明文 CSV 脱离了加密沙盒保护，请妥善保管并在使用后安全擦除。导出加密备份（.vgvault）由专属备份密码保护。</li>
+        <li><strong>彻底物理销毁</strong>：在手机设置中点击“清除应用数据”或“卸载应用”，系统将物理擦除所有本地数据库与密钥缓存，设备上不残留任何明文或密文信息。</li>
+      </ul>
+
+      <h2>六、 未成年人隐私保护</h2>
+      <p>本应用不针对未成年人定向推广，亦无账号注册系统。倡导未成年人在法定监护人指导下安全使用密码工具。</p>
+
+      <h2>七、 政策更新与联系方式</h2>
+      <p>如本政策随技术实践或法律要求变更，更新版本将随应用包及在线公开页面发布。如有任何疑问，请通过开源仓库或应用内“关于”页面提交反馈。</p>
+    </div>
+
+    <!-- 英文内容 -->
+    <div id="content-en" class="content-section">
+      <div class="highlight-card">
+        <strong>[Core Declaration]</strong> VaultGuard is a 100% offline standalone password and 2FA manager designed for absolute privacy. In accordance with zero-network and zero-knowledge principles, all network permissions (<code>android.permission.INTERNET</code> and <code>android.permission.ACCESS_NETWORK_STATE</code>) have been completely stripped from the application manifest. <strong>The application and its developer do not collect, transmit, share, or sell any of your personal data or vault credentials.</strong>
+      </div>
+
+      <h2>1. Core Principles: Zero Network Communication & Sandbox Isolation</h2>
+      <ol>
+        <li><strong>Network Permissions Completely Stripped</strong>: The Android OS physically prohibits this application from making any network calls. The application possesses zero backend servers, zero remote APIs, and zero cloud databases.</li>
+        <li><strong>Hardware-Backed Local End-to-End Encryption</strong>: All titles, accounts, passwords, 2FA keys, mnemonic phrases, and custom notes (Note 1, Note 2, Note 3) are encrypted on-device before storage using <strong>Argon2id</strong> and <strong>XChaCha20-Poly1305 / AES-256-GCM</strong>.</li>
+        <li><strong>Zero-Knowledge Master Password</strong>: Your Master Key is derived in volatile RAM solely from your Master Password, safeguarded by the Android Keystore (TEE/StrongBox), and wiped upon locking. No one in the world can decrypt or inspect your data.</li>
+      </ol>
+
+      <h2>2. Zero Data Collection Statement</h2>
+      <ul>
+        <li><strong>No Identity Data</strong>: No registration required; no collection of names, phone numbers, emails, or IDs;</li>
+        <li><strong>No Device Identifiers</strong>: No reading or collection of IMEI, MEID, Android ID, OAID, MAC addresses, or serial numbers;</li>
+        <li><strong>No Telemetry or Analytics</strong>: No logging of usage duration, frequency, or click behavior;</li>
+        <li><strong>No Location Data</strong>: Zero access to GPS, cellular, or Wi-Fi positioning;</li>
+        <li><strong>Clipboard Security</strong>: Copied credentials are placed on the clipboard strictly for manual pasting. An automated clipboard wipe timer is supported, and external clipboard data is never harvested.</li>
+      </ul>
+
+      <h2>3. Operating System Permissions & Lawful Purpose</h2>
+      <p>VaultGuard adheres to the principle of minimal privilege and requests only the following permissions:</p>
+      <ul>
+        <li><strong>Biometric (<code>android.permission.USE_BIOMETRIC</code>)</strong>: Used solely for fingerprint or facial unlock. Matching is handled directly inside the device hardware security enclave (TEE); the app never accesses raw biometric data.</li>
+        <li><strong>Camera (<code>android.permission.CAMERA</code>)</strong>: Used exclusively when scanning 2FA QR codes. Video frames are decoded in volatile memory and immediately discarded.</li>
+        <li><strong>Vibration (<code>android.permission.VIBRATE</code>)</strong>: Provides tactile haptic confirmation upon successful operations.</li>
+        <li><strong>Notifications (<code>android.permission.POST_NOTIFICATIONS</code>)</strong>: Displays clipboard wipe timers and autofill confirmations.</li>
+        <li><strong>Autofill Service (<code>AutofillService</code>)</strong>: Fills credentials into third-party apps and browsers upon biometric confirmation, never capturing non-credential screens.</li>
+      </ul>
+
+      <h2>4. Third-Party SDKs & Components</h2>
+      <p>The application completely strips commercial advertising SDKs, tracking libraries (such as Firebase Analytics, Umeng, Adjust), and cloud push frameworks. On-device QR barcode decoding (ML Kit / ZXing) runs strictly offline on the device CPU/NPU.</p>
+
+      <h2>5. User Data Ownership & Total Destruction</h2>
+      <ul>
+        <li><strong>100% User Ownership</strong>: Vault databases reside exclusively within the application's isolated sandbox storage.</li>
+        <li><strong>Backup Caution</strong>: Plaintext CSV exports leave the encrypted sandbox; store them securely and shred after use. Encrypted backups (.vgvault) are protected with a dedicated password.</li>
+        <li><strong>Permanent Destruction</strong>: Selecting "Clear App Data" or uninstalling the app permanently erases all databases and keys from the hardware storage.</li>
+      </ul>
+
+      <h2>6. Children's Privacy</h2>
+      <p>VaultGuard is an offline utility that collects no data and does not target minors. We encourage parents and guardians to guide minors in safe credential practices.</p>
+
+      <h2>7. Policy Updates & Contact</h2>
+      <p>Any updates to this policy will be bundled directly into updated application releases and posted publicly. If you have any inquiries, please submit feedback via our repository or the in-app "About" page.</p>
+    </div>
+
+    <div class="footer">
+      <div class="nav-links">
+        <a href="user_agreement.html">用户服务协议 (User Agreement)</a>
+        <span>•</span>
+        <a href="index.html">返回首页 (Home Portal)</a>
+      </div>
+      <div>&copy; 2026 VaultGuard / 密码管理器. All rights reserved.</div>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
+      if (lang === 'zh') {
+        document.querySelector('.lang-btn:nth-child(1)').classList.add('active');
+        document.getElementById('content-zh').classList.add('active');
+        document.getElementById('page-title').innerText = '隐私政策 (Privacy Policy)';
+        document.documentElement.lang = 'zh-CN';
+      } else {
+        document.querySelector('.lang-btn:nth-child(2)').classList.add('active');
+        document.getElementById('content-en').classList.add('active');
+        document.getElementById('page-title').innerText = 'Privacy Policy (隐私政策)';
+        document.documentElement.lang = 'en';
+      }
+    }
+  </script>
+</body>
+</html>
