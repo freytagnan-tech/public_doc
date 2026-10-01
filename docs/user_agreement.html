@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Service Agreement | 用户服务协议 - 密码管理器 (VaultGuard)</title>
+  <meta name="description" content="VaultGuard (com.freytagnan.pwdmanager_local) 100% Offline Standalone Password Manager User Service Agreement. 纯离线单机用户服务协议。">
+  <style>
+    :root {
+      --primary: #10b981;
+      --primary-dark: #059669;
+      --bg: #ffffff;
+      --text: #1f2937;
+      --text-muted: #6b7280;
+      --card-bg: #f9fafb;
+      --border: #e5e7eb;
+      --badge-bg: #ecfdf5;
+      --badge-text: #065f46;
+      --warn-bg: #fffbeb;
+      --warn-border: #fde68a;
+      --warn-text: #92400e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111827;
+        --text: #f3f4f6;
+        --text-muted: #9ca3af;
+        --card-bg: #1f2937;
+        --border: #374151;
+        --badge-bg: #064e3b;
+        --badge-text: #a7f3d0;
+        --warn-bg: #78350f;
+        --warn-border: #92400e;
+        --warn-text: #fef3c7;
+      }
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background-color: var(--bg);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 80px 20px;
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .badge {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .lang-btn {
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .content-section {
+      display: none;
+    }
+    .content-section.active {
+      display: block;
+    }
+    h2 {
+      font-size: 1.35rem;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: var(--primary);
+      border-left: 4px solid var(--primary);
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    p, li {
+      font-size: 0.97rem;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .warning-box {
+      background-color: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      color: var(--warn-text);
+      padding: 16px 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      font-weight: 500;
+    }
+    .warning-box strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+    .nav-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="header-top">
+        <div>
+          <span class="badge">100% Offline / 纯单机</span>
+          <h1 id="page-title">用户服务协议 (User Agreement)</h1>
+        </div>
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('zh')">中文</button>
+          <button class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </div>
+      <div class="meta">
+        <div><strong>应用名称 / Application</strong>: 密码管理器 (VaultGuard 离线版)</div>
+        <div><strong>应用包名 / Package</strong>: <code>com.freytagnan.pwdmanager_local</code></div>
+        <div><strong>生效日期 / Effective Date</strong>: 2026年10月01日 (October 01, 2026)</div>
+      </div>
+    </div>
+
+    <!-- 中文内容 -->
+    <div id="content-zh" class="content-section active">
+      <div class="warning-box">
+        <strong>【特别警示】零知识架构与主密码不可恢复性说明</strong>
+        本软件是一款完全离线的纯本地工具，不提供任何云端同步与服务器托管。所有加密密钥均由您设置的主密码在本地内存实时派生。<strong>本软件无任何“找回密码”、“重置密码”或后台人工解密机制。若您遗忘主密码，任何人（包括开发者）都无法解密或恢复您的任何数据。请务必牢记并安全备份您的主密码！</strong>
+      </div>
+
+      <h2>一、 服务内容与工具定位</h2>
+      <ol>
+        <li><strong>纯单机本地工具</strong>：本软件是一款采用端到端本地强加密（E2EE）与零知识证明设计的单机安全密码管理器。为您提供本地密码、API 密钥、2FA/TOTP 动态令牌、助记词的加密存储、导入导出及系统级安全自动填充功能。</li>
+        <li><strong>零网络与去中心化</strong>：本软件不提供任何云端服务器托管、远程数据同步或在线账户体系。本软件在底层彻底剥离了网络权限，所有数据与运算均在您的终端设备物理本地完成。</li>
+      </ol>
+
+      <h2>二、 主密码管理与用户核心安全责任</h2>
+      <ol>
+        <li><strong>唯一密码学凭证</strong>：主密码是派生数据加密密钥（DEK）的唯一核心凭据，开发者不保存亦无法获取您的主密码明文或密文。</li>
+        <li><strong>遗失责任自负</strong>：若主密码遗忘或丢失，数据将永久无法解密和恢复，开发者在技术上与法律上均无法协助您找回数据，由此产生的一切损失由您自行承担。</li>
+        <li><strong>物理与设备环境安全</strong>：您应确保安装本软件的设备处于安全受控状态，防范设备遗失、恶意软件感染、Root 提权攻击。因设备被攻破或锁屏密码泄露导致的任何损失由您自行承担。</li>
+      </ol>
+
+      <h2>三、 数据所有权、导出与备份规范</h2>
+      <ol>
+        <li><strong>数据完全所有权</strong>：您录入、存储、导入的全部账号、密码、密钥及文字记录等数据，其所有权与控制权均完整归属于您本人。</li>
+        <li><strong>离线备份建议</strong>：由于本软件不提供云端备份，为防范设备损坏，建议您定期使用应用内的离线导出功能生成加密备份文件（.vgvault），并保存于安全可靠的物理离线介质中。</li>
+        <li><strong>明文导出风险自负</strong>：若您选择导出为明文 CSV 格式，导出的文件将失去本软件的加密沙盒保护。您须承担导出明文文件后的保密义务，并在使用后及时进行安全擦除。</li>
+      </ol>
+
+      <h2>四、 用户使用规范与禁止行为</h2>
+      <p>用户在使用本软件过程中，必须遵守法律法规，不得从事以下行为：</p>
+      <ul>
+        <li>存储或处理非法侵入他人计算机系统所获取的未授权账号、密码或敏感凭据；</li>
+        <li>利用本软件从事侵犯他人知识产权、商业秘密、隐私权或其他合法权益的活动；</li>
+        <li>对本软件进行反向工程、反向汇编、反编译、破解，或以其他方式试图提取源代码与加密逻辑；</li>
+        <li>修改、篡改或伪造本软件运行中的指令、数据或安全特征，制作或传播带有恶意篡改的衍生版本。</li>
+      </ul>
+
+      <h2>五、 知识产权声明</h2>
+      <p>本软件及其相关的一切著作权、商标权等知识产权均归开发者所有。开发者授予您一项个人的、非排他性的、不可转让且不可转授权的合法使用许可，您仅可出于个人非商业目的在单一终端设备上安装及使用本软件。</p>
+
+      <h2>六、 免责声明与有限责任</h2>
+      <ol>
+        <li><strong>按“现状”提供</strong>：在法律允许的最大限度内，本软件按“现状”（As Is）和“现有”（As Available）提供。开发者不对软件的稳定性、绝对无漏洞性或适用特定用途作出任何明示或暗示的担保。</li>
+        <li><strong>免责范围</strong>：因用户遗忘主密码、未及时本地备份、误删数据、设备硬件损坏丢失、系统崩溃、遭受木马病毒或越狱 Root 攻击等情形导致的任何数据损失或间接损失，开发者均不承担赔偿责任。</li>
+        <li><strong>赔偿限额</strong>：在任何情况下，开发者对用户因使用本软件所遭受直接损失的累计赔偿责任，以用户向开发者实际支付的费用（如有）为上限；若本软件为免费提供，则赔偿限额为零。</li>
+      </ol>
+
+      <h2>七、 协议修改与争议管辖</h2>
+      <ol>
+        <li>开发者有权根据技术演进或法律法规修改本协议，修订后的协议将完整打包于最新软件版本中。若您继续使用，即视为接受修订后的协议。</li>
+        <li>本协议适用中华人民共和国大陆地区法律。因本协议产生的争议双方应友好协商，协商不成的，任何一方均可向开发者住所地有管辖权的人民法院提起诉讼。</li>
+      </ol>
+    </div>
+
+    <!-- 英文内容 -->
+    <div id="content-en" class="content-section">
+      <div class="warning-box">
+        <strong>[CRITICAL WARNING] Zero-Knowledge Architecture & Master Password Non-Recoverability</strong>
+        VaultGuard is a 100% offline standalone utility with zero cloud servers or remote hosting. All encryption keys are derived locally in volatile RAM from your Master Password. <strong>There is no "Forgot Password" or recovery mechanism. If you forget your Master Password, your data CANNOT be decrypted by anyone, including the developer. Please memorize and securely back up your Master Password!</strong>
+      </div>
+
+      <h2>1. Service Scope & Tool Classification</h2>
+      <ol>
+        <li><strong>Standalone Offline Tool</strong>: VaultGuard is an offline password manager engineered with End-to-End Encryption (E2EE) and Zero-Knowledge principles. It provides local encrypted storage, management, offline import/export, and system-level autofill for credentials, API tokens, 2FA/TOTP keys, and mnemonic seeds.</li>
+        <li><strong>Zero-Network & Decentralized</strong>: The software provides no remote server hosting, cloud syncing, or online accounts. All network permissions are stripped; all cryptographic computations execute solely on your personal physical device.</li>
+      </ol>
+
+      <h2>2. Master Password & User Security Responsibilities</h2>
+      <ol>
+        <li><strong>Sole Cryptographic Key</strong>: Your Master Password is the sole source for deriving your Data Encryption Key (DEK). The developer never holds your credentials.</li>
+        <li><strong>Sole User Responsibility</strong>: If the Master Password is forgotten, lost, or corrupted, your vault cannot be recovered. The developer has no technical or legal means to assist in password recovery, and all associated losses are borne exclusively by the user.</li>
+        <li><strong>Physical & Device Security</strong>: Users are responsible for keeping their devices secure against physical theft, malware, and root privilege escalation. Losses resulting from compromised device environments or disclosed lock screens are solely the user's responsibility.</li>
+      </ol>
+
+      <h2>3. Data Ownership, Export & Backup</h2>
+      <ol>
+        <li><strong>100% Data Ownership</strong>: You retain complete ownership and control over all accounts, passwords, keys, and notes stored in the software.</li>
+        <li><strong>Offline Backup Advice</strong>: Because no cloud backup exists, you are strongly advised to regularly generate encrypted backups (.vgvault) and store them in an isolated physical medium.</li>
+        <li><strong>Plaintext Export Risks</strong>: Exporting unencrypted CSV files removes all cryptographic protection. You assume full confidentiality obligations for plaintext files and must securely shred them after use.</li>
+      </ol>
+
+      <h2>4. Acceptable Use & Prohibited Activities</h2>
+      <p>Users shall comply with all applicable laws and shall not:</p>
+      <ul>
+        <li>Store or handle credentials obtained through unlawful computer intrusion or credential stuffing;</li>
+        <li>Infringe on any third party's intellectual property, trade secrets, or privacy rights;</li>
+        <li>Reverse engineer, decompile, disassemble, or crack the software;</li>
+        <li>Tamper with, modify, or redistribute unauthorized binary derivatives of the software.</li>
+      </ul>
+
+      <h2>5. Intellectual Property</h2>
+      <p>All intellectual property rights in and to the software belong exclusively to the developer. The developer grants you a personal, non-exclusive, non-transferable, revocable license to install and use the software for personal, non-commercial purposes on your personal devices.</p>
+
+      <h2>6. Disclaimer of Warranties & Limitation of Liability</h2>
+      <ol>
+        <li><strong>"AS IS" Provision</strong>: To the maximum extent permitted by applicable law, the software is provided "AS IS" and "AS AVAILABLE" without warranties of any kind.</li>
+        <li><strong>Exclusion of Liability</strong>: The developer shall not be liable for any data loss, hardware damage, or indirect damages resulting from forgotten master passwords, failure to maintain backups, device theft, OS crashes, or malware infections.</li>
+        <li><strong>Aggregate Liability Cap</strong>: To the maximum extent permitted by law, the developer's aggregate liability for direct damages shall not exceed the amount actually paid by you for the software (if any); if provided free of charge, the limit is zero.</li>
+      </ol>
+
+      <h2>7. Modifications & Governing Law</h2>
+      <ol>
+        <li>The developer reserves the right to amend this Agreement in accordance with legal and technical requirements. Updated agreements will be distributed with updated software packages.</li>
+        <li>This Agreement is governed by the laws of the People's Republic of China. Any disputes arising herefrom shall be settled through amicable negotiation, failing which either party may submit the dispute to the competent court in the developer's jurisdiction.</li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      <div class="nav-links">
+        <a href="privacy_policy.html">隐私政策 (Privacy Policy)</a>
+        <span>•</span>
+        <a href="user_guide.html">使用说明书 (User Manual)</a>
+        <span>•</span>
+        <a href="index.html">返回首页 (Home Portal)</a>
+      </div>
+      <div>&copy; 2026 VaultGuard / 密码管理器. All rights reserved.</div>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
+      if (lang === 'zh') {
+        document.querySelector('.lang-btn:nth-child(1)').classList.add('active');
+        document.getElementById('content-zh').classList.add('active');
+        document.getElementById('page-title').innerText = '用户服务协议 (User Agreement)';
+        document.documentElement.lang = 'zh-CN';
+      } else {
+        document.querySelector('.lang-btn:nth-child(2)').classList.add('active');
+        document.getElementById('content-en').classList.add('active');
+        document.getElementById('page-title').innerText = 'User Service Agreement (用户服务协议)';
+        document.documentElement.lang = 'en';
+      }
+    }
+  </script>
+</body>
+</html>
